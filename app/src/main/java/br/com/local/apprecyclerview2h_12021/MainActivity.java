@@ -17,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.idRecyclerView);
 
+        FilmesAdapter adapter = new FilmesAdapter();
 
-        //recyclerView.setAdapter(adaptador);
+        recyclerView.setAdapter(adapter);
     }
 }

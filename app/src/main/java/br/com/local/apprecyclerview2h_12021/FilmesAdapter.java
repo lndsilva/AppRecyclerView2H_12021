@@ -20,9 +20,12 @@ public class FilmesAdapter extends RecyclerView.Adapter<FilmesAdapter.ViewHolder
     @Override
     public ViewHolder onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
 
+        View view;
 
+        LayoutInflater inflater = LayoutInflater.from(ctx);
+        view = inflater.inflate(R.layout.modelo_card_filmes,null);
 
-        return null;
+        return new ViewHolder(view);
     }
 
     @Override
